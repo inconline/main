@@ -1,0 +1,15 @@
+# env
+.env
+.env.*
+
+# dependencies
+landing/node_modules/
+
+# build output
+landing/dist/
+
+# vite
+landing/.vite/
+
+# OS
+.DS_Store
