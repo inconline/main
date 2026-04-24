@@ -1,0 +1,34 @@
+{
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "name": "evm-project",
+  "version": "0.0.1",
+  "description": "EVM smart contracts with Hardhat + Foundry hybrid setup",
+  "keywords": ["solidity", "ethereum", "hardhat", "foundry"],
+  "authors": [{"name": "", "email": ""}],
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ignition-ethers": "^0.15.5",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.8",
+    "@openzeppelin/contracts": "^5.2.0",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.15",
+    "viem": "^2.21.48"
+  },
+  "dependencies": {},
+  "scripts": {
+    "test": "forge test",
+    "test:verbose": "forge test -vvv",
+    "test:fuzz": "forge test --fuzz-runs 10000",
+    "snapshot": "forge snapshot",
+    "snapshot:check": "forge snapshot --check",
+    "build": "forge build",
+    "clean": "forge clean",
+    "lint": "slither .",
+    "coverage": "forge coverage",
+    "deploy:ignition": "npx hardhat ignition deploy",
+    "verify": "npx hardhat verify",
+    "node": "npx hardhat node"
+  }
+}

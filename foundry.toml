@@ -1,0 +1,25 @@
+[profile.default]
+src = 'contracts'
+out = 'out'
+libs = ['node_modules', 'lib']
+test = 'test'
+script = 'script'
+solc_version = '0.8.28'
+optimizer = true
+optimizer_runs = 200
+via_ir = false
+
+[fuzz]
+runs = 10000
+
+[invariant]
+runs = 256
+depth = 100
+
+[rpc_endpoints]
+baseSepolia = 'https://sepolia.base.org'
+local = 'http://127.0.0.1:8545'
+
+[profile.ci]
+fuzz = { runs = 10000 }
+invariant = { runs = 1000, depth = 500 }

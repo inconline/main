@@ -3,13 +3,25 @@
 .env.*
 
 # dependencies
+node_modules/
 landing/node_modules/
 
 # build output
+out/
+broadcast/
+cache/
+cache_hardhat/
+artifacts/
+typechain-types/
 landing/dist/
-
-# vite
 landing/.vite/
+
+# lib (git submodule for forge-std)
+lib/
 
 # OS
 .DS_Store
+
+# Editor
+.vscode/
+.idea/
